@@ -5,16 +5,15 @@ let imgContainer = document.querySelector( '.img' );
 const userName = document.querySelector( '#name' )
 const userNumber = document.querySelector( '#number' )
 const RollNo = document.querySelector("#roll-no")
-const ilaqa = document.querySelector("#ilaqa")
 
 button.onclick = () => {
 
-    if ( userName.value.length < 3 || userNumber.value.length != 10 || RollNo.value.length == 0 || ilaqa.value.length == 0) {
+    if ( userName.value.length < 3 || userNumber.value.length != 10 || RollNo.value.length == 0) {
         alert( 'Please enter all fields properly' )
         return
     }
 
-    let userValues = `{RollNo : "${RollNo.value}" , Participant:"${ userName.value }", Contact : "${ userNumber.value }" , ilaqa : "${ilaqa.value}"}`
+    let userValues = `{RegNo : "${RollNo.value}" , Participant:"${ userName.value }", Contact : "${ userNumber.value }"`
 
     let qrCode = `${ api }${ userValues }`;
     img.src = qrCode;
