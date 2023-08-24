@@ -13,7 +13,7 @@ button.onclick = () => {
         return
     }
 
-    let userValues = `{username:"${ userName.value }",usernumber : "${ userNumber.value }" , userage:"${ userAge.value }"}`
+    let userValues = `{Participant:"${ userName.value }",Contact : "${ userNumber.value }" , Registeration_No:"${ userAge.value }"}`
 
     let qrCode = `${ api }${ userValues }`;
     img.src = qrCode;
