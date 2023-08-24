@@ -4,6 +4,7 @@ let img = document.querySelector( 'img' );
 let imgContainer = document.querySelector( '.img' );
 const userName = document.querySelector( '#name' )
 const userNumber = document.querySelector( '#number' )
+const RollNo = document.querySelector("#roll-no")
 const userAge = document.querySelector( '#age' )
 
 button.onclick = () => {
